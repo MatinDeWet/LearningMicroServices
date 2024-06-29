@@ -1,0 +1,24 @@
+services: 
+    Seq:
+        image: datalust/seq:latest
+        container_name: Seq
+        restart: always
+        ports:
+            - 5341:80
+        environment:
+            ACCEPT_EULA: Y
+            SEQ_LICENSE: trial
+        volumes:
+            - .container/seq:/data
+    MsSql:
+        image: mcr.microsoft.com/azure-sql-edge:latest
+        container_name: MsSql
+        restart: unless-stopped
+        mem_limit: 2048m
+        volumes:
+        - .container/mssql:/var/opt/mssql/data
+        environment:
+        - ACCEPT_EULA=1
+        - MSSQL_SA_PASSWORD=AdminAdmin
+        ports:
+        - 1433:1433
