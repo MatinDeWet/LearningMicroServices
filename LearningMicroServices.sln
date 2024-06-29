@@ -20,9 +20,24 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Integration", "Integration"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{E33AF7E7-EEFD-452C-9AFC-48523303AF24}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services.CouponAPI", "Services.CouponAPI\Services.CouponAPI.csproj", "{41D57B19-06AE-4F31-9E6A-DBE741C2E63B}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{41D57B19-06AE-4F31-9E6A-DBE741C2E63B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41D57B19-06AE-4F31-9E6A-DBE741C2E63B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41D57B19-06AE-4F31-9E6A-DBE741C2E63B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41D57B19-06AE-4F31-9E6A-DBE741C2E63B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{41D57B19-06AE-4F31-9E6A-DBE741C2E63B} = {E33AF7E7-EEFD-452C-9AFC-48523303AF24}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {48A6F715-DCC1-483D-858E-14C23BE1043D}

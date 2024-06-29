@@ -11,14 +11,13 @@ services:
         volumes:
             - .container/seq:/data
     MsSql:
-        image: mcr.microsoft.com/azure-sql-edge:latest
+        image: mcr.microsoft.com/mssql/server:2022-latest
         container_name: MsSql
         restart: unless-stopped
-        mem_limit: 2048m
         volumes:
         - .container/mssql:/var/opt/mssql/data
         environment:
-        - ACCEPT_EULA=1
-        - MSSQL_SA_PASSWORD=AdminAdmin
+        - ACCEPT_EULA=Y
+        - MSSQL_SA_PASSWORD=SupperStrongPassword123321!
         ports:
         - 1433:1433
