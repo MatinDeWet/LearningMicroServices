@@ -1,4 +1,5 @@
-﻿using Ordering.Domain.Enums;
+﻿using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using Ordering.Domain.Enums;
 
 namespace Ordering.Infrastructure.Data.Configurations
 {
