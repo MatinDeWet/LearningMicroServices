@@ -40,11 +40,11 @@ services:
       context: .
       dockerfile: Ordering.API/Dockerfile
 
-  # yarpapigateway:
-  #   image: ${DOCKER_REGISTRY-}yarpapigateway
-  #   build:
-  #     context: .
-  #     dockerfile: ApiGateways/YarpApiGateway/Dockerfile
+  yarpapigateway:
+    image: ${DOCKER_REGISTRY-}yarpapigateway
+    build:
+      context: .
+      dockerfile: YarpApiGateway/Dockerfile
 
   # shopping.web:
   #   image: ${DOCKER_REGISTRY-}shoppingweb
